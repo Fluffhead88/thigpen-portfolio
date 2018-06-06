@@ -1,5 +1,5 @@
 from django.contrib import admin
-from app.models import Portfolio
+from app.models import Project
 
 # Register your models here.
-admin.site.register(Portfolio)
+admin.site.register(Project)
