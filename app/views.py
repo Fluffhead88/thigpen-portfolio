@@ -5,10 +5,12 @@ from rest_framework.response import Response
 from rest_framework import generics
 from app.models import Project
 from app.serializers import ProjectSerializer
+from django.views.generic import TemplateView
 
 
-def hello(request):
-    return HttpResponse("This is Zachary Thigpen's Portfolio")
+class IndexView(TemplateView):
+    template_name = 'index.html'
+
 
 class ProjectListAPIView(APIView):
 
@@ -18,14 +20,16 @@ class ProjectListAPIView(APIView):
         return Response(serialized_projects.data)
 
     def post(self, request):
-        print (request.POST)
+        print(request.POST)
         title = request.POST['title']
         technologies_used = request.POST['technologies_used']
         github_link = request.POST['github_link']
         project_desription = request.POST['project_desription']
 
-        Project.objects.create(title=title, technologies_used=technologies_used, github_link=github_link, project_desription=project_desription)
+        Project.objects.create(title=title, technologies_used=technologies_used,
+                               github_link=github_link, project_desription=project_desription)
         return Response({})
+
 
 class ProjectDetailAPIView(APIView):
 
@@ -44,11 +48,11 @@ class ProjectDetailAPIView(APIView):
         serialized_project = ProjectSerializer(project)
         return Response(serialized_project.data)
 
-
     def delete(self, request, pk):
         project = Project.objects.get(id=pk)
         project.delete()
         return Response({})
+
 
 """class ProjectListCreateAPIView(generics.ListCreateAPIView):
     queryset = Project.objects.all()

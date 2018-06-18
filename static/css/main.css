@@ -1,0 +1,74 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Oxygen';
+  background-color: rgb(239, 241, 242);
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: rgba(51, 118, 183, 07)
+}
+
+ul {
+  list-style: none;
+}
+
+.nav-style {
+  background-color: rgb(93, 93, 90);
+}
+
+.nav-style>nav>a {
+  color: white;
+}
+
+.about-header {
+  padding: 12px;
+  text-align: center;
+}
+
+.profile-picture {
+  height: 100%;
+  width: 50%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.bio {
+  padding: 4px;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.cards {
+  display: inline-flex;
+  padding: 10px
+}
+
+.link-list {
+  background-color: rgb(93, 93, 90);
+  padding: 4px;
+  text-align: center;
+  font-size: 16pt;
+}
+
+.link-list>li {
+  display: inline-flex;
+}
+
+.link-list>li>a {
+  padding: 15px;
+  color: white;
+}
+
+main {
+  clear: both;
+}
