@@ -1,11 +1,16 @@
 html {
   box-sizing: border-box;
-  font-family: 'Oxygen';
-  background-color: rgb(239, 241, 242);
+  font-family: 'Muli', sans-serif;
+  background-color: rgb(40, 44, 52);
 }
 
 img {
   width: 100%;
+}
+
+body {
+  background: url("https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?cs=srgb&dl=abstract-astro-astronomy-956999.jpg&fm=jpg");
+  background-size: cover;
 }
 
 a {
@@ -30,8 +35,10 @@ ul {
 }
 
 .about-header {
-  padding: 12px;
-  text-align: center;
+  font-size: 45;
+  padding: 20px;
+  text-align: left;
+  color: white;
 }
 
 .profile-picture {
@@ -42,15 +49,16 @@ ul {
 }
 
 .bio {
+  color: white;
   padding: 4px;
-  text-align: center;
+  text-align: justify;
   vertical-align: middle;
-  display: inline-block;
+  display: block;
 }
 
 .cards {
   display: inline-flex;
-  padding: 10px
+  padding: 10px;
 }
 
 .link-list {

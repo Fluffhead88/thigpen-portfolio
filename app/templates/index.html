@@ -9,9 +9,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <title>Zachary Thigpen PORTFOLIO</title>
+  bootstrap-social.css
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
-  <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
   <link rel="stylesheet" href="{% static 'css/main.css' %}">
 
 
@@ -25,14 +26,20 @@
 
   <header>
 
-    <div class="nav-style">
-      <nav class="nav nav-pills nav-justified">
-        <a class="nav-item nav-link active" href="#">Home</a>
-        <a class="nav-item nav-link" href="#">Projects</a>
-        <a class="nav-item nav-link" href="#">About</a>
-        <a class="nav-item nav-link disabled" href="#">Disabled</a>
-      </nav>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#">Portfolio</a>
+          <a class="nav-item nav-link" href="#">About</a>
+          <a class="nav-item nav-link" href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
 
 
 
@@ -44,15 +51,15 @@
 
     <section id="about">
       <div class="about-header">
-        <h1>ZAMBI PROGRAMMING</h1>
-        <p>Bruce Quote</p>
+        <h1>Creative Development Solutions</h1>
+        <p>by Zachary Thigpen</p>
       </div>
       <div class="main body">
-        <div class="profile-picture"><img src="http://georgiamusic.org/wp-content/uploads/2014/08/ColBruceSpace.jpg" alt="Col Bruce Hampton"></div>
+        <div class="profile-picture"></div>
 
 
         <div class="bio">
-          <p> This is my portfolio with examples of some of my work in programming.<br/> Technologies I employ include:
+          <p> Full stack web development <br/> Creative solutions
             <ul class="tech-list">
               <li>Python</li>
               <li>JavaScript</li>
@@ -60,7 +67,7 @@
               <li>Flask</li>
             </ul>
 
-            Check out my GitHub link for examples of some programs.</p>
+          </p>
         </div>
       </div>
     </section>
@@ -70,7 +77,7 @@
       <div class="card" style="width: 18rem;">
         <div class="card-body">
           <h5 class="card-title">Blackjack</h5>
-          <h6 class="card-subtitle mb-2 text-muted">A game of Blackjack in Python</h6>
+          <h6 class="card-subtitle mb-2 text-muted">Blackjack game written in Python</h6>
           <p class="card-text">A lesson in object oriented programming utilizing classes and methods.</p>
           <a href="#" class="card-link">https://github.com/Fluffhead88/blackjack</a>
         </div>
@@ -79,8 +86,8 @@
       <div class="card" style="width: 18rem;">
         <div class="card-body">
           <h5 class="card-title">Movie Review API</h5>
-          <h6 class="card-subtitle mb-2 text-muted">------</h6>
-          <p class="card-text">--------.</p>
+          <h6 class="card-subtitle mb-2 text-muted">Sample movie review API that stores reviewer data, reviews, and imdb links.</h6>
+          <p class="card-text"></p>
           <a href="#" class="card-link">https://github.com/Fluffhead88/movie-ratings</a>
         </div>
       </div>
@@ -119,6 +126,9 @@
 
     </footer>
   </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
 </body>
 
