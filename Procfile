@@ -1,1 +1,1 @@
-web: gunicron thigpen_portfolio/thigpen_portfolio/wsgi.py
+web: gunicorn thigpen_portfolio.thigpen_portfolio.wsgi
