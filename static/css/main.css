@@ -1,81 +1,151 @@
-html {
+* {
   box-sizing: border-box;
-  font-family: 'Muli', sans-serif;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
 }
 
 img {
   width: 100%;
 }
 
-body {
-  background: url("https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?cs=srgb&dl=abstract-astro-astronomy-956999.jpg&fm=jpg");
-  background-size: cover;
+section {
+  height: 100vh;
+  overflow: hidden;
 }
 
-a {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-a:hover {
-  color: rgba(51, 118, 183, 07)
-}
-
-ul {
-  list-style: none;
-}
-
-.nav-style {
-  background-color: rgb(93, 93, 90);
-}
-
-.nav-style>nav>a {
+#top {
+  background-color: #B55956;
+  z-index: 3;
   color: white;
 }
 
-.about-header {
-  font-size: 45;
-  padding: 20px;
-  text-align: left;
+.profile {
+  z-index: 1;
+  opacity: .4;
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  bottom: 13%;
+  left: 4%;
+  z-index: 3;
+}
+
+.section1-nav-down {
+  position: absolute;
+  bottom: 0;
+  right: 4%;
+  z-index: 3;
   color: white;
+  font-size: 18pt;
 }
 
-.profile-picture {
-  height: 100%;
-  width: 50%;
-  vertical-align: middle;
-  display: inline-block;
+#about-me {
+  background-color: #F6F8FA;
 }
 
-.bio {
-  color: white;
-  padding: 4px;
-  text-align: justify;
-  vertical-align: middle;
-  display: block;
+#about-me .col-6 {
+  margin-top: 8%;
+  padding: 20pt;
+  border-right: 4px solid black;
+  border-left: 4px solid black;
 }
 
-.cards {
-  display: inline-flex;
-  padding: 10px;
+.section2-nav-up {
+  position: absolute;
+  bottom: -5%;
+  right: 4%;
+  z-index: 3;
+  color: black;
+  font-size: 18pt;
 }
 
-.link-list {
-  background-color: rgb(93, 93, 90);
-  padding: 4px;
-  text-align: center;
-  font-size: 16pt;
+.section2-nav-down {
+  position: absolute;
+  bottom: -100%;
+  right: 4%;
+  z-index: 3;
+  color: black;
+  font-size: 18pt;
 }
 
-.link-list>li {
-  display: inline-flex;
+#project_cards {
+  background-color: #B55956;
 }
 
-.link-list>li>a {
-  padding: 15px;
-  color: white;
+#project_cards article {
+  padding: 10pt;
+  border: solid black;
+  background: #F6F8FA;
+  margin-top: 10%;
+  margin-right: 5%;
+  margin-left: 5%;
+  padding: 9%;
 }
 
-main {
-  clear: both;
+#project_cards article:hover {
+  transform: rotateY(180deg);
+  transition: 1s;
+}
+
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  backface-visibility: hidden;
+}
+
+.section3-nav-up {
+  position: absolute;
+  bottom: -105%;
+  right: 4%;
+  z-index: 3;
+  color: black;
+  font-size: 18pt;
+}
+
+.social_1 {
+  position: absolute;
+  bottom: -78%;
+  right: 7%;
+  z-index: 3;
+  color: black;
+  font-size: 29pt;
+}
+
+.social_2 {
+  position: absolute;
+  bottom: -78%;
+  right: 15%;
+  z-index: 3;
+  color: black;
+  font-size: 29pt;
+}
+
+.social_3 {
+  position: absolute;
+  bottom: -78%;
+  right: 23%;
+  z-index: 3;
+  color: black;
+  font-size: 29pt;
+}
+
+.email {
+  position: absolute;
+  bottom: -78%;
+  right: 31%;
+  z-index: 3;
+  color: black;
+  font-size: 29pt;
 }

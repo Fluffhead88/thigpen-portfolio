@@ -1,138 +1,114 @@
 {% load static %}
 
 <!DOCTYPE html>
-
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
-  <meta charset="UTF=8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <title>Zachary Thigpen PORTFOLIO</title>
-  bootstrap-social.css
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <title>Take Two</title>
   <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
-  <style>
-    @import url('https://fonts.googleapis.com/css?family=Muli');
-  </style>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="{% static 'css/main.css' %}">
-
-
 
 </head>
 
 <body>
-
   <script src="{% static 'js/app.js' %}" charset="utf-8"></script>
+  <div class="container-fluid">
+    <section id="top">
+      <a class="section1-nav-down" href="#about-me"><i class="fas fa-angle-down"></i>
+</a>
+      <div class="row">
 
+        <div class="col-12">
+          <div class="profile"><img src="./images/GB.profile.jpg" alt=""></div>
 
-  <header>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#">Portfolio</a>
-          <a class="nav-item nav-link" href="#">About</a>
-          <a class="nav-item nav-link" href="#">Contact</a>
+          <div class="content">
+            <h1>ZACHARY THIGPEN</h1>
+            <h2>
+          - musician & developer -
+        </h2>
+            <p>Web developer focused on creative and clean solutions in modern environments</p>
+          </div>
         </div>
       </div>
-    </nav>
+
+    </section>
+    <section id="about-me">
+      <a class="section2-nav-up" href="#top"><i class="fas fa-angle-up"></i>
 
 
+    </a>
+      <a class="section2-nav-down" href="#project_cards"><i class="fas fa-angle-down"></i>
+</a>
 
-  </header>
+      <div class="row">
+        <div class="col-3"></div>
 
-  <main>
-
-
-
-    <section id="about">
-      <div class="about-header">
-        <h1>Creative Development Solutions</h1>
-        <p>by Zachary Thigpen</p>
-      </div>
-      <div class="main body">
-        <div class="profile-picture"></div>
-
-
-        <div class="bio">
-          <p> Full stack web development <br/> Creative solutions
-            <ul class="tech-list">
-              <li>Python</li>
-              <li>JavaScript</li>
-              <li>Django</li>
-              <li>Flask</li>
-            </ul>
-
-          </p>
+        <div class="col-6">
+          <h1>About Me</h1>
+          <p>Zachary Thigpen is a Web and Software Developer who partners with clients to find solutions to fit their needs and grow their personal and professional brands, human-to-human. After spending nearly a decade working in business management and
+            running a multimillion dollar retail store, Zach knows what truly drives successful businesses, and how to find real world solutions in today’s work environments. Since then, Zach has spent several years learning the latest technologies employed
+            in web and software development with a strong full stack skillset.</p>
+          <p>Zach is also a professional musician who has been performing and working around the Southeast for 15+ years. His experience as a creative artist brings a unique eye and approach to composing and arranging solutions as well as the ability to
+            pivot and be flexible when change is present.</p>
+          <p>Zach holds a BA in audio technology and a minor in business administration from Clemson University and a Carolina Code School certified web developer.</p>
         </div>
+
+        <div class="col-3"></div>
       </div>
     </section>
 
-    <div class="cards">
+    <section id="project_cards">
+      <a class="section3-nav-up" href="#about-me"><i class="fas fa-angle-up"></i></a>
+      <div class="row">
 
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Blackjack</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Blackjack game written in Python</h6>
-          <p class="card-text">A lesson in object oriented programming utilizing classes and methods.</p>
-          <a href="https://github.com/Fluffhead88/blackjack" class="card-link"></a>
+        <div class="col-12 col-md">
+          <article>
+            <div class="front">
+              <h1>Blackjack</h1>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="back">
+
+              <!-- <img src="images/Code Shot.png" alt=""> -->
+            </div>
+          </article>
         </div>
+        <div class="col-12 col-md">
+          <article>
+            <h1>Record Store</h1>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+          </article>
+        </div>
+        <div class="col-12 col-md">
+          <article>
+            <h1>Currency Converter</h1>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </article>
+          <a class="social_1" href="https://www.linkedin.com/in/zacharythigpen/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a class="social_2" href="https://github.com/Fluffhead88" target="_blank"><i class="fab fa-github-square"></i></a>
+          <a class="social_3" href="https://twitter.com/Zachary_Thigpen" target="_blank"><i class="fab fa-twitter-square"></i>
+
+</a>
+          <a class="email" href="mailto:thigpen.zach@gmail.com?Subject=Website%20Contact" target="_top"> <i class="fas fa-envelope-square"></i></a>
+
+
+        </div>
+
       </div>
 
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Movie Review API</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Sample movie review API that stores reviewer data, reviews, and imdb links.</h6>
-          <p class="card-text"></p>
-          <a href="https://github.com/Fluffhead88/movie-ratings" class="card-link"></a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Blackjack</h5>
-          <h6 class="card-subtitle mb-2 text-muted">A game of Blackjack in Python</h6>
-          <p class="card-text">A lesson in object oriented programming utilizing classes and methods.</p>
-          <a href="https://github.com/Fluffhead88/blackjack" class="card-link"></a>
-        </div>
-      </div>
-    </div>
 
 
-  </main>
+    </section>
 
-  <aside>
-
-
-  </aside>
-
-  <div class="footer">
-
-
-    <footer>
-
-      <section id="links">
-        <ul class="link-list">
-          <li><a href="https://thegratefulbrother.wixsite.com/zacharythigpen">Blog</a></li>
-          <li><a href="https://www.linkedin.com/in/zacharythigpen/">LinkedIn</a></li>
-          <li><a href="https://github.com/Fluffhead88?tab=repositories">GitHub</a></li>
-          <li><a href="#">Email</a></li>
-        </ul>
-      </section>
-      <!--footer content-->
-
-    </footer>
   </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-
 </body>
 
 </html>
