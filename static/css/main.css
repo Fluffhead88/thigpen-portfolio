@@ -120,7 +120,7 @@ section {
 .social_1 {
   position: absolute;
   bottom: -201%;
-  right: 3%;
+  right: 2%;
   z-index: 3;
   color: black;
   font-size: 29pt;
@@ -129,7 +129,7 @@ section {
 .social_2 {
   position: absolute;
   bottom: -201%;
-  right: 7%;
+  right: 5%;
   z-index: 3;
   color: black;
   font-size: 29pt;
@@ -138,7 +138,7 @@ section {
 .social_3 {
   position: absolute;
   bottom: -201%;
-  right: 11%;
+  right: 8%;
   z-index: 3;
   color: black;
   font-size: 29pt;
@@ -147,7 +147,7 @@ section {
 .email {
   position: absolute;
   bottom: -201%;
-  right: 15%;
+  right: 11%;
   z-index: 3;
   color: black;
   font-size: 29pt;
