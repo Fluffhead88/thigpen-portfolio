@@ -1,8 +1,6 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
   <meta charset="utf-8">
   <title>Zachary Thigpen Portfolio</title>
@@ -11,42 +9,30 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="{% static 'css/main.css' %}">
-
 </head>
-
 <body>
   <script src="{% static 'js/app.js' %}" charset="utf-8"></script>
   <div class="container-fluid">
     <section id="top">
-      <a class="section1-nav-down" href="#about-me"><i class="fas fa-angle-down"></i>
-</a>
+      <a class="section1-nav-down" href="#about-me"><i class="fas fa-angle-down"></i></a>
       <div class="row">
-
         <div class="col-12">
           <div class="profile"><img src="{% static 'images/GB.profile.jpg'%}" alt=""></div>
-
-          <div class="content">
-            <h1>ZACHARY THIGPEN</h1>
-            <h2>
-          - musician & developer -
-        </h2>
-            <p>Web developer focused on creative and clean solutions in modern environments</p>
-          </div>
         </div>
-      </div>
-
+        </div>
+          <div class="row content">
+            <div class = "col-12">
+              <h1>ZACHARY THIGPEN</h1>
+              <h2>- musician & developer -</h2>
+              <p>Web developer focused on creative and clean solutions in modern environments</p>
+            </div>
+          </div>
     </section>
     <section id="about-me">
-      <a class="section2-nav-up" href="#top"><i class="fas fa-angle-up"></i>
-
-
-    </a>
-      <a class="section2-nav-down" href="#project_cards"><i class="fas fa-angle-down"></i>
-</a>
-
+      <a class="section2-nav-up" href="#top"><i class="fas fa-angle-up"></i></a>
+      <a class="section2-nav-down" href="#project_cards"><i class="fas fa-angle-down"></i></a>
       <div class="row">
         <div class="col-3"></div>
-
         <div class="col-6">
           <h1>About Me</h1>
           <p>I am a Web and Software Developer who specializes in finding solutions to fit needs and grow personal and professional brands, human-to-human. After spending nearly a decade working in business management and
@@ -56,24 +42,19 @@
             pivot and be flexible when change is present.</p>
           <p>I hold a Bachelor of Arts in audio technology and a minor in business administration from Clemson University and a Carolina Code School Immersive 12 Week Full Stack Certificate.</p>
         </div>
-
         <div class="col-3"></div>
       </div>
     </section>
-
     <section id="project_cards">
       <a class="section3-nav-up" href="#about-me"><i class="fas fa-angle-up"></i></a>
       <div class="row">
-
         <div class="col-12 col-md">
           <article>
             <div class="front">
               <h1 class="card_link"><a href="https://morning-beyond-85234.herokuapp.com/" target="_blank">The Record Bin</a></h1>
-
               <p>Full stack web app that allows users to catalog and organize their vinyl record collection. It fetches information from Last.FM's API and saves album information to a users personal collection. You can also view other users collections and contact them from the app which uses mailgun to send an email allowing them to purchase or trade albums with others. Back end is build using Python/Django and front end is built using JavaScript/React with Material UI.</p>
             </div>
             <div class="back">
-
               <!-- <img src="images/Code Shot.png" alt=""> -->
             </div>
           </article>
@@ -81,40 +62,26 @@
         <div class="col-12 col-md">
           <article>
             <h1 class="card_link"><a href="https://github.com/Fluffhead88/blackjack/blob/master/blackjack_1.py" target="_blank">Blackjack</a></h1>
-
             <p>This is a game of blackjack that uses object oriented programming. There is a player and a dealer. Both the player and dealer are dealt 2 cards from 1 deck of cards at the beginning of the game. The player is then allowed to hit to draw more cards. The dealer is programmed to automatically hit if their hand value is less than 17. User is told if either player busts, hits blackjack, and who wins the game.</p>
           </article>
-
         </div>
         <div class="col-12 col-md">
           <article>
             <h1 class="card_link"><a href="https://fluffhead88.github.io/responsive-calculator/" target="_blank">Responsive Calculator</a></h1>
-
             <p>A calculator built using JavaScript with HTML with Bootstrap and CSS. You can add, subtract, divide, and multiply in the interface.</p>
-
           </article>
-          </div>
-          </div>
-          <div class= "row">
-            <div class= "col-12">
+        </div>
+      </div>
+      <div class= "row">
+        <div class= "col-12">
               <!-- <p>Technologies</p> -->
-            </div>
-          </div>
-
-          <a class="social_1" href="https://www.linkedin.com/in/zacharythigpen/" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a class="social_2" href="https://github.com/Fluffhead88" target="_blank"><i class="fab fa-github-square"></i></a>
-          <a class="social_3" href="https://twitter.com/Zachary_Thigpen" target="_blank"><i class="fab fa-twitter-square"></i></a>
-          <a class="email" href="mailto:thigpen.zach@gmail.com?Subject=Website%20Contact" target="_top"> <i class="fas fa-envelope-square"></i></a>
-
-
-
-
-
-
-
+        </div>
+      </div>
+        <a class="social_1" href="https://www.linkedin.com/in/zacharythigpen/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a class="social_2" href="https://github.com/Fluffhead88" target="_blank"><i class="fab fa-github-square"></i></a>
+        <a class="social_3" href="https://twitter.com/Zachary_Thigpen" target="_blank"><i class="fab fa-twitter-square"></i></a>
+        <a class="email" href="mailto:thigpen.zach@gmail.com?Subject=Website%20Contact" target="_top"> <i class="fas fa-envelope-square"></i></a>
     </section>
-
   </div>
 </body>
-
 </html>
