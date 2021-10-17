@@ -12,7 +12,7 @@ img {
 
 section {
   height: 100vh;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 #top {
@@ -48,7 +48,7 @@ section {
 }
 
 #about-me .col-6 {
-  margin-top: 11%;
+  margin-top: 6%;
   padding: 20pt;
   border-right: 4px solid black;
   border-left: 4px solid black;
@@ -74,6 +74,7 @@ section {
 
 #project_cards {
   background-color: #B55956;
+  padding-bottom: 5em;
 }
 
 #project_cards article {
