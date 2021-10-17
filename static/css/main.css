@@ -96,7 +96,7 @@ section {
   transition: 1s;
 }
 
-#project_cards article:hover .front p{
+#project_cards article:hover .front{
 	display: none
 }
 

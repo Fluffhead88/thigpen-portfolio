@@ -1,118 +1,119 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <title>Zachary Thigpen Portfolio</title>
-  <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link rel="stylesheet" href="{% static 'css/main.css' %}">
-  	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZP9K7S2ND2"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+	<head>
+	<meta charset="utf-8">
+	<title>Zachary Thigpen Portfolio</title>
+	<link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="{% static 'css/main.css' %}">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZP9K7S2ND2"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
 
-		gtag('config', 'G-ZP9K7S2ND2');
-	</script>
-</head>
-<body>
-  <script src="{% static 'js/app.js' %}" charset="utf-8"></script>
-  <div class="container-fluid">
-    <section id="top">
-      <a class="section1-nav-down" href="#about-me"><i class="fas fa-angle-down"></i></a>
-      <div class="row">
-        <div class="col-12">
-          <div class="profile"><img src="{% static 'images/GB.profile.jpg'%}" alt=""></div>
-        </div>
-        </div>
-          <div class="row content">
-            <div class = "col-12">
-              <h1>ZACHARY THIGPEN</h1>
-              <h2>- musician & developer & manager -</h2>
-              <p>Web developer, product and project manager, </br>focused on creative and clean solutions in modern environments </br>that achieve real life business goals in concise time frames</p>
-            </div>
-          </div>
-    </section>
-    <section id="about-me">
-      <a class="section2-nav-up" href="#top"><i class="fas fa-angle-up"></i></a>
-      <a class="section2-nav-down" href="#project_cards"><i class="fas fa-angle-down"></i></a>
-      <div class="row">
-        <div class="col-3"></div>
-        <div class="col-6">
-          <h1>About Me</h1>
-          <p>I am a Web/Software Developer who specializes in finding solutions to fit needs and grow personal and professional brands, human-to-human. After spending nearly a decade working in business management and
-            running a multimillion dollar retail store, I know what truly drives successful businesses, and how to find real world solutions in today’s work environments. Since then, I've spent several years learning the latest technologies employed
-            in web and software development with a strong full stack skillset.</p>
-          <p>I'm also a professional musician who has been performing and working around the Southeast for 15+ years. My experience as a creative artist brings a unique eye and approach to composing and arranging solutions as well as the ability to
-            pivot and be flexible when change is present.</p>
-          <p>I hold a Bachelor of Arts in audio technology and a minor in business administration from Clemson University and a Carolina Code School Immersive 12 Week Full Stack Certificate.</p>
-		  <p>I am currently the lead software developer at Quattlebaum Servcies and regularly work in PHP, Laravel, React, Python, HTML, CSS, Azure DevOps, Project and Product Management, Native Mobile Apps, Modern Reposonsive Web Design, Apache web servers, Linux sys-admin, MySql database implementations and management, and much more.</p>
-        </div>
-        <div class="col-3"></div>
-      </div>
-    </section>
-    <section id="project_cards">
-      <a class="section3-nav-up" href="#about-me"><i class="fas fa-angle-up"></i></a>
-      <div class="row">
-        <div class="col-12 col-md">
-          <article>
-            <div class="front">
-              <h1 class="card_link"><a href="https://myrecordbin.com/" target="_blank">The Record Bin</a></h1>
-              <p>My final project for Carolina Code School graduation. This is a web app that allows users to catalog and organize their vinyl record collection. It fetches information from Last.FM's API and saves album information to a users personal collection. You can also view other users collections and contact them from the app which uses mailgun to send an email allowing them to purchase or trade albums with others. Back end is build using Python/Django and front end is built using JavaScript/React with Material UI.</p>
-            </div>
-            <div class="back">
-              <img src="{% static 'images/GB.profile.jpg'%}" alt="">
-            </div>
-          </article>
-        </div>
-        <div class="col-12 col-md">
-          <article>
-            <h1 class="card_link"><a href="https://www.smartpo.com" target="_blank">Smart PO</a></h1>
-            <p>SmartPO™ is a simple purchasing and electronic invoicing system built to fit the needs of Non-Acute Healthcare Facilities. SmartPO provides a complete order management and contract price management solution, while allowing users to build orders, approve orders, view order confirmations, or manage contract prices from multiple vendors. Application built with PHP back end and includes many custom API and library integrations and varied user level access options.</p>
-			<p>Native Mobile App developed with Python and Kivy: <a href="https://apps.apple.com/us/app/smartpo/id1491788619" target="_blank">SmartPO Mobile</a></p>
-          </article>
-        </div>
-        <div class="col-12 col-md">
-          <article>
-            <h1 class="card_link"><a href="https://www.homehistory.io" target="_blank">Home History</a></h1>
-            <p>Remember every detail about your home. Organize every contact, appliance, service, and maintenance job in a single place. Home maintenace record user storage built with .NET backend and REACT front end.</p>
-          </article>
-        </div>
-      </div>
-      <div class= "row">
-        <div class="col-12 col-md">
-			<article>
-			  <div class="front">
-				<h1 class="card_link"><a href="https://www.sweetdeals.com" target="_blank">Sweetdeals</a></h1>
-				<p>Ecommerce site with several hundred custom domains and 10's of thousands of users. Application built with PHP back end and includes many custom API and library integrations.</p>
-			  </div>
-			  <div class="back">
-				<!-- <img src="images/Code Shot.png" alt=""> -->
-			  </div>
-			</article>
-		  </div>
-		  <div class="col-12 col-md">
-			<article>
-			  <h1 class="card_link"><a href="https://localadmin.incentrev.com/" target="_blank">IncentRev Admin</a></h1>
-			  <p>Admin site for management of all IncentRev Ecommerce sites. Full reporting suite, filterable list views, and site configuation with many different user levels offered. Application built with PHP Laravel Framework back end and includes many custom API and library integrations.</p>
-			</article>
-		  </div>
-		  <div class="col-12 col-md">
-			<article>
-			  <h1 class="card_link"><a href="https://shop.sweetdeals.com/shop" target="_blank">Sweetdeals Shop</a></h1>
-			  <p>Product based Ecommerce site with admin site for managing products and sales. Mutli-Vendor, Custom Shopify import, Custom ShipStation integration, and much more. Application built with AIMEOS PHP Laravel Framework back end and includes many custom API and library integrations.</p>
-			</article>
-		  </div>
-      </div>
-        <a class="social_1" href="https://www.linkedin.com/in/zacharythigpen/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a class="social_2" href="https://github.com/Fluffhead88" target="_blank"><i class="fab fa-github-square"></i></a>
-        <a class="social_3" href="https://twitter.com/Zachary_Thigpen" target="_blank"><i class="fab fa-twitter-square"></i></a>
-        <a class="email" href="mailto:thigpen.zach@gmail.com?Subject=Website%20Contact" target="_top"> <i class="fas fa-envelope-square"></i></a>
-    </section>
-  </div>
-</body>
+			gtag('config', 'G-ZP9K7S2ND2');
+		</script>
+	</head>
+	<body>
+		<script src="{% static 'js/app.js' %}" charset="utf-8"></script>
+		<div class="container-fluid">
+			<section id="top">
+				<a class="section1-nav-down" href="#about-me"><i class="fas fa-angle-down"></i></a>
+				<div class="row">
+					<div class="col-12">
+						<div class="profile"><img src="{% static 'images/GB.profile.jpg'%}" alt=""></div>
+					</div>
+				</div>
+				<div class="row content">
+					<div class = "col-12">
+						<h1>ZACHARY THIGPEN</h1>
+						<h2>- musician & developer & manager -</h2>
+						<p>Web developer, product and project manager, </br>focused on creative and clean solutions in modern environments </br>that achieve real life business goals in concise time frames</p>
+					</div>
+				</div>
+			</section>
+			<section id="about-me">
+				<a class="section2-nav-up" href="#top"><i class="fas fa-angle-up"></i></a>
+				<a class="section2-nav-down" href="#project_cards"><i class="fas fa-angle-down"></i></a>
+				<div class="row">
+					<div class="col-3"></div>
+					<div class="col-6">
+						<h1>About Me</h1>
+						<p>I am a Web/Software Developer who specializes in finding solutions to fit needs and grow personal and professional brands, human-to-human. After spending nearly a decade working in business management and
+							running a multimillion dollar retail store, I know what truly drives successful businesses, and how to find real world solutions in today’s work environments. Since then, I've spent several years learning the latest technologies employed
+							in web and software development with a strong full stack skillset.</p>
+						<p>I'm also a professional musician who has been performing and working around the Southeast for 15+ years. My experience as a creative artist brings a unique eye and approach to composing and arranging solutions as well as the ability to
+							pivot and be flexible when change is present.</p>
+						<p>I hold a Bachelor of Arts in audio technology and a minor in business administration from Clemson University and a Carolina Code School Immersive 12 Week Full Stack Certificate.</p>
+						<p>I am currently the lead software developer at Quattlebaum Servcies and regularly work in PHP, Laravel, React, Python, HTML, CSS, Azure DevOps, Project and Product Management, Native Mobile Apps, Modern Reposonsive Web Design, Apache web servers, Linux sys-admin, MySql database implementations and management, and much more.</p>
+					</div>
+					<div class="col-3"></div>
+				</div>
+			</section>
+			<section id="project_cards">
+				<a class="section3-nav-up" href="#about-me"><i class="fas fa-angle-up"></i></a>
+				<div class="row">
+					<div class="col-12 col-md">
+						<article>
+							<div class="front">
+								<h1 class="card_link"><a href="https://myrecordbin.com/" target="_blank">The Record Bin</a></h1>
+								<p>My final project for Carolina Code School graduation. This is a web app that allows users to catalog and organize their vinyl record collection. It fetches information from Last.FM's API and saves album information to a users personal collection. You can also view other users collections and contact them from the app which uses mailgun to send an email allowing them to purchase or trade albums with others. Back end is build using Python/Django and front end is built using JavaScript/React with Material UI.</p>
+							</div>
+							<div class="back">
+								<h1 class="card_link"><a href="https://myrecordbin.com/" target="_blank">The Record Bin</a></h1>
+								<a href="https://myrecordbin.com/" target="_blank"><img src="{% static 'images/GB.profile.jpg'%}" alt=""></a>
+							</div>
+						</article>
+					</div>
+					<div class="col-12 col-md">
+						<article>
+							<h1 class="card_link"><a href="https://www.smartpo.com" target="_blank">Smart PO</a></h1>
+							<p>SmartPO™ is a simple purchasing and electronic invoicing system built to fit the needs of Non-Acute Healthcare Facilities. SmartPO provides a complete order management and contract price management solution, while allowing users to build orders, approve orders, view order confirmations, or manage contract prices from multiple vendors. Application built with PHP back end and includes many custom API and library integrations and varied user level access options.</p>
+							<p>Native Mobile App developed with Python and Kivy: <a href="https://apps.apple.com/us/app/smartpo/id1491788619" target="_blank">SmartPO Mobile</a></p>
+						</article>
+					</div>
+					<div class="col-12 col-md">
+						<article>
+							<h1 class="card_link"><a href="https://www.homehistory.io" target="_blank">Home History</a></h1>
+							<p>Remember every detail about your home. Organize every contact, appliance, service, and maintenance job in a single place. Home maintenace record user storage built with .NET backend and REACT front end.</p>
+						</article>
+					</div>
+				</div>
+				<div class= "row">
+					<div class="col-12 col-md">
+						<article>
+							<div class="front">
+								<h1 class="card_link"><a href="https://www.sweetdeals.com" target="_blank">Sweetdeals</a></h1>
+								<p>Ecommerce site with several hundred custom domains and 10's of thousands of users. Application built with PHP back end and includes many custom API and library integrations.</p>
+							</div>
+							<div class="back">
+								<!-- <img src="images/Code Shot.png" alt=""> -->
+							</div>
+						</article>
+					</div>
+					<div class="col-12 col-md">
+						<article>
+							<h1 class="card_link"><a href="https://localadmin.incentrev.com/" target="_blank">IncentRev Admin</a></h1>
+							<p>Admin site for management of all IncentRev Ecommerce sites. Full reporting suite, filterable list views, and site configuation with many different user levels offered. Application built with PHP Laravel Framework back end and includes many custom API and library integrations.</p>
+						</article>
+					</div>
+					<div class="col-12 col-md">
+						<article>
+							<h1 class="card_link"><a href="https://shop.sweetdeals.com/shop" target="_blank">Sweetdeals Shop</a></h1>
+							<p>Product based Ecommerce site with admin site for managing products and sales. Mutli-Vendor, Custom Shopify import, Custom ShipStation integration, and much more. Application built with AIMEOS PHP Laravel Framework back end and includes many custom API and library integrations.</p>
+						</article>
+					</div>
+				</div>
+				<a class="social_1" href="https://www.linkedin.com/in/zacharythigpen/" target="_blank"><i class="fab fa-linkedin"></i></a>
+				<a class="social_2" href="https://github.com/Fluffhead88" target="_blank"><i class="fab fa-github-square"></i></a>
+				<a class="social_3" href="https://twitter.com/Zachary_Thigpen" target="_blank"><i class="fab fa-twitter-square"></i></a>
+				<a class="email" href="mailto:thigpen.zach@gmail.com?Subject=Website%20Contact" target="_top"> <i class="fas fa-envelope-square"></i></a>
+			</section>
+		</div>
+	</body>
 </html>
