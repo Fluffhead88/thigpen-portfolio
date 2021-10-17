@@ -102,6 +102,16 @@ section {
 
 #project_cards article:hover .back{
 	backface-visibility: initial;
+	display: block;
+}
+
+/* #project_cards article:hover .back .back_image{
+	display: block;
+} */
+
+
+.back{
+	display: none;
 }
 
 .front {
