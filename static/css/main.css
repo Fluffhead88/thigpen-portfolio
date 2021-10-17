@@ -90,6 +90,7 @@ section {
 .card_link a{
   color: black;
 }
+
 #project_cards article:hover {
   transform: rotateY(180deg);
   transition: 1s;
