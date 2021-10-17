@@ -90,24 +90,24 @@ section {
 .card_link a{
   color: black;
 }
-/* #project_cards article:hover {
+#project_cards article:hover {
   transform: rotateY(180deg);
   transition: 1s;
-} */
+}
 
-/* .front {
+.front {
   z-index: 2;
 
   transform: rotateY(0deg);
-} */
+}
 
-/* .back {
+.back {
   transform: rotateY(180deg);
 }
 
 .front, .back {
   backface-visibility: hidden;
-} */
+}
 
 .section3-nav-up {
   position: absolute;
