@@ -96,6 +96,14 @@ section {
   transition: 1s;
 }
 
+#project_cards article:hover .front p{
+	display: none
+}
+
+#project_cards article:hover .back{
+	backface-visibility: initial;
+}
+
 .front {
   z-index: 2;
 
