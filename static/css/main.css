@@ -25,6 +25,8 @@ section {
   z-index: 1;
   opacity: .4;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .content {
@@ -98,7 +100,7 @@ section {
 }
 
 #project_cards article:hover .front{
-	display: none;
+	visibility: hidden;
 	transition: 1s;
 }
 
