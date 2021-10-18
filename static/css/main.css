@@ -173,13 +173,13 @@ section {
   font-size: 29pt;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (max-width: 1000px) {
 	.footer_links {
 
 	}
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (max-width: 700px) {
 	.banner_img {
 	  width: initial;
 	  height: 100vh;
