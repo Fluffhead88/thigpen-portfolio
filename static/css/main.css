@@ -138,36 +138,36 @@ section {
 }
 
 .social_1 {
-  position: absolute;
-  bottom: -201%;
-  right: 2%;
+  /* position: absolute; */
+  /* bottom: -201%; */
+  /* right: 2%; */
   z-index: 3;
   color: black;
   font-size: 29pt;
 }
 
 .social_2 {
-  position: absolute;
-  bottom: -201%;
-  right: 5%;
+  /* position: absolute; */
+  /* bottom: -201%; */
+  /* right: 5%; */
   z-index: 3;
   color: black;
   font-size: 29pt;
 }
 
 .social_3 {
-  position: absolute;
-  bottom: -201%;
-  right: 8%;
+  /* position: absolute; */
+  /* bottom: -201%; */
+  /* right: 8%; */
   z-index: 3;
   color: black;
   font-size: 29pt;
 }
 
 .email {
-  position: absolute;
-  bottom: -201%;
-  right: 11%;
+  /* position: absolute; */
+  /* bottom: -201%; */
+  /* right: 11%; */
   z-index: 3;
   color: black;
   font-size: 29pt;
