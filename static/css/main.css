@@ -55,8 +55,7 @@ section {
 }
 
 .about_me_text {
-  margin-top: 6%;
-  margin-bottom: 6%;
+  margin: auto;
   padding: 20pt;
   border-right: 4px solid black;
   border-left: 4px solid black;
