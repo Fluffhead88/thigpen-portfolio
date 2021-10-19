@@ -101,7 +101,7 @@ section {
 }
 
 #project_cards article:hover .front{
-	visibility: hidden;
+	display: none;
 	transition: 1s;
 }
 
