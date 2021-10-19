@@ -12,7 +12,8 @@ img {
 
 section {
   height: 100vh;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 #top {
@@ -47,6 +48,10 @@ section {
 
 #about-me {
   background-color: #F6F8FA;
+}
+
+.about_me_row{
+	height: 100%;
 }
 
 .about_me_text {
