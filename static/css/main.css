@@ -114,10 +114,12 @@ section {
 }
 
 #project_cards article:hover .back{
-	backface-visibility: initial;
-	display: block;
+	/* backface-visibility: initial;
+	display: block; */
 	transition: 1s ease-in-out;
 	height: auto;
+	visibility: visible;
+	opacity: 1;
 }
 
 /* #project_cards article:hover .back .back_image{
