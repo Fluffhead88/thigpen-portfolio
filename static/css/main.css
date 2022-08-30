@@ -114,7 +114,7 @@ section {
 	transition: visibility 1s, opacity 1s linear;
 }
 #project_cards article:hover .front_title{
-	display: none;
+	visibility: hidden;
 }
 
 
