@@ -108,6 +108,7 @@ section {
 	/* display: none; */
 	transition: 1s ease-in-out;
 	visibility: hidden;
+	height: 0;
 	opacity: 0;
 	transition: visibility 0s, opacity 0.5s linear;
 }
@@ -116,6 +117,7 @@ section {
 	backface-visibility: initial;
 	display: block;
 	transition: 1s ease-in-out;
+	height: auto;
 }
 
 /* #project_cards article:hover .back .back_image{
