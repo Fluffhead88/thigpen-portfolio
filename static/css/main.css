@@ -101,18 +101,21 @@ section {
 
 #project_cards article:hover {
   transform: rotateY(180deg);
-  transition: 1s;
+  transition: 1s ease-in-out;
 }
 
 #project_cards article:hover .front{
-	display: none;
-	transition: 1s;
+	/* display: none; */
+	transition: 1s ease-in-out;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s, opacity 0.5s linear;
 }
 
 #project_cards article:hover .back{
 	backface-visibility: initial;
 	display: block;
-	transition: 1s;
+	transition: 1s ease-in-out;
 }
 
 /* #project_cards article:hover .back .back_image{
