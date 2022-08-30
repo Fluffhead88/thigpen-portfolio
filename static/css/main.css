@@ -115,8 +115,9 @@ section {
 
 #project_cards article:hover .back{
 	backface-visibility: initial;
-	/* display: block; */
+	display: block;
 	transition: 1s ease-in-out;
+	transition: visibility 1s, opacity 1s linear;
 	height: auto;
 	visibility: visible;
 	opacity: 1;
