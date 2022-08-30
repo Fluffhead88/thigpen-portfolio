@@ -110,7 +110,7 @@ section {
 	visibility: hidden;
 	height: 0;
 	opacity: 0;
-	transition: visibility 0s, opacity 0.5s linear;
+	transition: visibility 1s, opacity 1s linear;
 }
 
 #project_cards article:hover .back{
