@@ -100,7 +100,8 @@ section {
 }
 
 #project_cards article:hover {
-  transform: rotateY(180deg);
+  transform: rotateY(180deg) translateZ(1px);
+  transform-style: preserve-3d;
   transition: 1s ease-in-out;
 }
 
